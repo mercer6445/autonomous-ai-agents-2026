@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 500" width="1200" height="500">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0a16"/>
+      <stop offset="50%" stop-color="#111827"/>
+      <stop offset="100%" stop-color="#050811"/>
+    </linearGradient>
+    <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="50%" stop-color="#818cf8"/>
+      <stop offset="100%" stop-color="#c084fc"/>
+    </linearGradient>
+    <linearGradient id="glowCard" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="8" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="500" rx="18" fill="url(#bg)"/>
+
+  <!-- Grid overlay -->
+  <g stroke="#ffffff" stroke-opacity="0.04" stroke-width="1">
+    <line x1="0" y1="100" x2="1200" y2="100" />
+    <line x1="0" y1="200" x2="1200" y2="200" />
+    <line x1="0" y1="300" x2="1200" y2="300" />
+    <line x1="0" y1="400" x2="1200" y2="400" />
+    <line x1="300" y1="0" x2="300" y2="500" />
+    <line x1="600" y1="0" x2="600" y2="500" />
+    <line x1="900" y1="0" x2="900" y2="500" />
+  </g>
+
+  <!-- Title Badge -->
+  <rect x="420" y="45" width="360" height="34" rx="17" fill="#1e1b4b" stroke="#6366f1" stroke-width="1.5"/>
+  <text x="600" y="68" fill="#a5b4fc" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="14" font-weight="700" text-anchor="middle" letter-spacing="2">⚡ 2026 TRENDING TECH MATRIX</text>
+
+  <!-- Main Headline -->
+  <text x="600" y="130" fill="url(#textGrad)" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="46" font-weight="900" text-anchor="middle" filter="url(#glow)">AUTONOMOUS AI AGENT SWARMS</text>
+  <text x="600" y="165" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="18" text-anchor="middle">Next-Generation Multi-Agent Systems &amp; Self-Executing Workflows</text>
+
+  <!-- 3 Feature Cards -->
+  <!-- Card 1 -->
+  <g transform="translate(80, 220)">
+    <rect width="320" height="210" rx="16" fill="url(#glowCard)" stroke="#38bdf8" stroke-width="1.5" stroke-opacity="0.6"/>
+    <circle cx="45" cy="45" r="22" fill="#0369a1" fill-opacity="0.3"/>
+    <text x="45" y="52" fill="#38bdf8" font-family="sans-serif" font-size="20" text-anchor="middle">🤖</text>
+    <text x="80" y="50" fill="#f8fafc" font-family="sans-serif" font-size="18" font-weight="700">Autonomous Core</text>
+    <text x="30" y="95" fill="#94a3b8" font-family="sans-serif" font-size="14">Self-prompting orchestration</text>
+    <text x="30" y="125" fill="#94a3b8" font-family="sans-serif" font-size="14">Dynamic tool routing &amp; memory</text>
+    <text x="30" y="155" fill="#94a3b8" font-family="sans-serif" font-size="14">Zero-human supervision pipelines</text>
+    <rect x="30" y="175" width="80" height="20" rx="6" fill="#0284c7" fill-opacity="0.3"/>
+    <text x="70" y="189" fill="#38bdf8" font-family="sans-serif" font-size="11" font-weight="700" text-anchor="middle">99.4% SOTA</text>
+  </g>
+
+  <!-- Card 2 -->
+  <g transform="translate(440, 220)">
+    <rect width="320" height="210" rx="16" fill="url(#glowCard)" stroke="#818cf8" stroke-width="1.5" stroke-opacity="0.6"/>
+    <circle cx="45" cy="45" r="22" fill="#4338ca" fill-opacity="0.3"/>
+    <text x="45" y="52" fill="#818cf8" font-family="sans-serif" font-size="20" text-anchor="middle">🌐</text>
+    <text x="80" y="50" fill="#f8fafc" font-family="sans-serif" font-size="18" font-weight="700">Multi-Agent Swarm</text>
+    <text x="30" y="95" fill="#94a3b8" font-family="sans-serif" font-size="14">Consensus-driven reasoning</text>
+    <text x="30" y="125" fill="#94a3b8" font-family="sans-serif" font-size="14">Hierarchical planner-executor</text>
+    <text x="30" y="155" fill="#94a3b8" font-family="sans-serif" font-size="14">Sub-second IPC message bus</text>
+    <rect x="30" y="175" width="85" height="20" rx="6" fill="#4f46e5" fill-opacity="0.3"/>
+    <text x="72" y="189" fill="#a5b4fc" font-family="sans-serif" font-size="11" font-weight="700" text-anchor="middle">100+ AGENTS</text>
+  </g>
+
+  <!-- Card 3 -->
+  <g transform="translate(800, 220)">
+    <rect width="320" height="210" rx="16" fill="url(#glowCard)" stroke="#c084fc" stroke-width="1.5" stroke-opacity="0.6"/>
+    <circle cx="45" cy="45" r="22" fill="#7e22ce" fill-opacity="0.3"/>
+    <text x="45" y="52" fill="#c084fc" font-family="sans-serif" font-size="20" text-anchor="middle">⚡</text>
+    <text x="80" y="50" fill="#f8fafc" font-family="sans-serif" font-size="18" font-weight="700">Edge &amp; Local LLMs</text>
+    <text x="30" y="95" fill="#94a3b8" font-family="sans-serif" font-size="14">Air-gapped secure inference</text>
+    <text x="30" y="125" fill="#94a3b8" font-family="sans-serif" font-size="14">Quantized 4-bit KV caching</text>
+    <text x="30" y="155" fill="#94a3b8" font-family="sans-serif" font-size="14">Instant tool-call execution</text>
+    <rect x="30" y="175" width="90" height="20" rx="6" fill="#9333ea" fill-opacity="0.3"/>
+    <text x="75" y="189" fill="#e9d5ff" font-family="sans-serif" font-size="11" font-weight="700" text-anchor="middle">SUB-10MS TTFT</text>
+  </g>
+</svg>
